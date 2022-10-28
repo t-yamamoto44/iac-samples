@@ -19,7 +19,7 @@
           "ServerSideEncryptionConfiguration": [
             {
               "ServerSideEncryptionByDefault": {
-                "SSEAlgorithm": true
+                "SSEAlgorithm": AES256
               }
             }
           ]

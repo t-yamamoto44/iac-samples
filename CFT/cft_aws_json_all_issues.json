@@ -54,7 +54,7 @@
         "TopicPolicy"
       ],
       "Properties": {
-        "IsMultiRegionTrail": false,
+        "IsMultiRegionTrail": true
         "S3BucketName": {
           "Ref": "S3Bucket"
         },
@@ -70,7 +70,7 @@
     "kmsKey": {
       "Type": "AWS::KMS::Key",
       "Properties": {
-        "EnableKeyRotation": false
+        "EnableKeyRotation": true
       }
     },
     "taskdefinition": {
@@ -269,7 +269,7 @@
       "Type": "AWS::Redshift::Cluster",
       "Properties": {
         "PubliclyAccessible": true,
-        "Encrypted": false
+        "Encrypted": true
       }
     }
   },
